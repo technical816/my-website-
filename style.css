@@ -1,0 +1,45 @@
+/* Common styles for all pages */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav {
+  background: #444;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+  min-height: 70vh;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
