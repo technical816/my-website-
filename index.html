@@ -25,9 +25,18 @@ nav a {
   font-weight: bold;
 }
 
+nav a:hover {
+  color: #ffd700;
+}
+
 main {
   padding: 20px;
   text-align: center;
+}
+
+video {
+  margin: 10px;
+  border-radius: 10px;
 }
 
 footer {
@@ -38,44 +47,44 @@ footer {
   margin-top: 30px;
 }
 </style>
-
 </head>
 
 <body>
 
 <nav>
   <a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
 <main>
 
-<video width="300" controls>
+<h2>My Videos</h2>
+
+<!-- 🎥 Videos -->
+<video width="300" controls onplay="pauseAll(this)">
   <source src="bajrangbali.mp4" type="video/mp4">
 </video>
 
-  <h2>My Videos</h2>
+<video width="300" controls onplay="pauseAll(this)">
+  <source src="khana.mp4" type="video/mp4">
+</video>
 
-  <video width="300" controls onclick="pauseAll(this)">
-    <source src="khana.mp4" type="video/mp4">
-  </video>
-
-  <video width="300" controls onclick="pauseAll(this)">
+<video width="300" controls onplay="pauseAll(this)">
   <source src="happy_propose_day.mp4" type="video/mp4">
 </video>
 
-<br><br>
-
-<video width="300" controls onclick="pauseAll(this)">
+<video width="300" controls onplay="pauseAll(this)">
   <source src="song.mp4" type="video/mp4">
 </video>
+
+</main>
+
 <footer>
-  <p>© 2026 | All Rights Reserved</p>
+  <p>© 2026 My Website | All Rights Reserved</p>
 </footer>
 
-</body>
-  <script>
+<script>
 function pauseAll(currentVideo) {
   let videos = document.querySelectorAll("video");
   videos.forEach(video => {
@@ -84,5 +93,7 @@ function pauseAll(currentVideo) {
     }
   });
 }
-  </script>
+</script>
+
+</body>
 </html>
